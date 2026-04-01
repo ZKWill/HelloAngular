@@ -6,7 +6,7 @@ const app = express();
 const produtosRoutes = require('./routes/produtos');
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use('/produtos', produtosRoutes);
 
